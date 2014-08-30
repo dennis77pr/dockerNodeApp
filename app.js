@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 // New Code
 var mongo = require('mongodb');
 var monk = require('monk');
-var address = process.env.MONGODB_PORT_27017_TCP_ADDR;
-var port = process.env.MONGODB_PORT_27017_TCP_PORT;
+var address = process.env.MONGO_DB_PORT_27017_TCP_ADDR;
+var port = process.env.MONGO_DB_PORT_27017_TCP_PORT;
 var db = monk(address+':'+port+'/nodemongo1_db');
 
 var routes = require('./routes/index');
