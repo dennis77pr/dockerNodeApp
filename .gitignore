@@ -5,4 +5,4 @@ logs
 node_modules
 concat
 bower_components
-data
+data/*
