@@ -28,7 +28,7 @@ router.get('/allNone', function(req, res) {
     var collection = db.get('usercollection');
     collection.find({},{},function(e,docs){
         res.render('allNone', {
-            "allNone" : docs
+            "userlist" : docs
         });
     });
 });
