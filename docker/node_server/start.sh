@@ -9,7 +9,7 @@ git clone https://github.com/dennis77pr/dockerNodeApp.git
 
 cd dockerNodeApp
 
-git pull -f
+git checkout master
 
 npm install
 

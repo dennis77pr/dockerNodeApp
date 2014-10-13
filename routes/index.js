@@ -22,6 +22,17 @@ router.get('/userlist', function(req, res) {
     });
 });
 
+/* GET All in one list page. */
+router.get('/allNone', function(req, res) {
+    var db = req.db;
+    var collection = db.get('usercollection');
+    collection.find({},{},function(e,docs){
+        res.render('allNone', {
+            "allNone" : docs
+        });
+    });
+});
+
 /* GET New User page. */
 router.get('/newuser', function(req, res) {
     res.render('newuser', { title: 'Add New User' });
