@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#DATA_VOLUME_NAME="mongo_data_mstr"
-DATA_VOLUME_NAME="mongo_data_test"
+DATA_VOLUME_NAME="mongo_data_mstr"
+#DATA_VOLUME_NAME="mongo_data_test"
 
 DB_IMAGE_NAME="dennis/mongo_db"
 DB_CONTAINER_NAME="mongo_db"
